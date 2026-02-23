@@ -5,53 +5,133 @@ body {
 
 .raam {
     position: relative;
-    text-align: center;
     width: 1920px;
     height: 1080px;
-    background: linear-gradient(160deg, rgba(0, 71, 164, 1) 0%, rgba(113, 49, 126, 1) 27%, rgba(0, 97, 124, 1) 73%, rgba(79, 0, 190, 1) 100%);
+    background: linear-gradient(145deg, rgba(0, 71, 164, 1) 0%, rgba(113, 49, 126, 1) 27%, rgba(0, 97, 124, 1) 73%, rgba(79, 0, 190, 1) 100%);
 }
 
+/* ufo algus */
 .ufo {
     position: absolute;
     top: 148px;
     left: 837px;
-}
-
-.sparkles {
-    position: absolute;
-    top: 119px;
-    left: 921px;
-}
-
-.bigstar-overlay {
-    position: absolute;
-    left: 27%;
-    top: 0%;
-    mix-blend-mode: overlay;
-}
-
-.bigstar-softlight {
-    position: absolute;
-    left: 27%;
-    top: 0%;
-    mix-blend-mode: soft-light;
+    z-index: 2;
 }
 
 .cat {
     position: absolute;
     top: 694px;
     left: 1015px;
+    z-index: 1;
 }
 
+.sparkles {
+    position: absolute;
+    top: 119px;
+    left: 921px;
+    z-index: 3;
+}
+
+/* basic t2hed */
+.basic-stars {
+    position: relative;
+}
+
+.basic-stars #a {
+    position: inherit;
+    top: 550px;
+    left: 1500px;
+}
+
+.basic-stars #b {
+    position: inherit;
+    top: 650px;
+    left: 1500px;
+}
+
+/* suur t2ht paremal */
+.bigstar-overlay {
+    position: absolute;
+    left: 27%;
+    top: 0%;
+    opacity: 55%;
+    mix-blend-mode:hard-light;
+}
+
+.bigstar-softlight {
+    position: absolute;
+    left: 27%;
+    top: 0%;
+    opacity: 75%;
+    mix-blend-mode: overlay;
+}
+
+/* j2nese planeet */
 .j2nes {
     position: absolute;
     top: 372px;
     left: 212px;
 }
 
+/* j2nese planeedi tausta squiggle */
 .squiggly {
     position: absolute;
     top: 185px;
     left: 0px;
     rotate: 19deg;
+}
+
+/* kosmose uss */
+.snek {
+    position: absolute;
+    top: 25px;
+    left: 45px;
+}
+
+/* ylemised t2hed */
+.rounded-s {
+    position: relative;
+}
+
+.rounded-s #purple {
+    position: inherit;
+    top: 20px;
+    left: 50px;
+}
+
+.rounded-s #yellow {
+    position: inherit;
+    top: 100px;
+    left: -90px;
+}
+
+.rounded-s #orange {
+    position: inherit;
+    left: 170px;
+    z-index: 3;
+}
+
+.rounded-s #green {
+    position: inherit;
+    top: 120px;
+    left: 580px;
+    z-index: 3;
+}
+
+/* komeet */
+/* see v6iks ylevalt vasakult alla paremale liikuda, alguses v2ike */
+.comet {
+    position: absolute;
+    transform: scale(-1, 1);
+}
+
+/* glass thing */
+.glass {
+    position: fixed;
+    top: -450px;
+    left: -300px;
+    /* From https://css.glass */
+    border-radius: 100%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
